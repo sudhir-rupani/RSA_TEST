@@ -42,7 +42,7 @@ const Home = () => {
   }
 
   return (
-    <>
+    <div className= 'mainContainer'>
       <Quote
         isMonthlyPrice={isMonthlyPrice}
         quote={quote}
@@ -54,7 +54,7 @@ const Home = () => {
         addons={addons}
         setAddonsData={setAddonsData}
       />
-    </>
+    </div>
   )
 }
 

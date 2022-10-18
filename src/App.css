@@ -19,7 +19,7 @@ p {
 h2 {
   font-weight: 400;
 }
-.container {
+.mainContainer {
   max-width: 85%;
   margin: 0 auto;
   padding: 0 30px;
@@ -114,6 +114,10 @@ h2.addon.title {
   margin: 1rem 0;
 }
 @media (max-width: 768px) {
+  .mainContainer {
+    max-width: 90%;
+    padding: 0 5px;
+  }
   .quote .container {
     flex-direction: column;
     padding-top: 20px;
