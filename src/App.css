@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background: #a1c3ff;
+}
+p {
+  margin: 5px 0px;
+}
+h2 {
+  font-weight: 400;
+}
+.container {
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.navbar {
+  background: #3474e6;
+  color: #fff;
+  height: 60px;
+}
+
+.navbar .logo {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.quote {
+  color: #fff;
+}
+
+.quote .box{
+  text-align: center;
+  padding: 20px 100px;
+}
+
+.quote .container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 25rem;
+  align-items: center;
+}
+
+.quote .container >div {
+  width: 50%;
+}
+
+.quote button {
+  margin-top: 10px;
+}
+
+.boxes .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  background: #0a51cc;
+  color: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 15px 20px;
+  max-width: 37.5rem;
+  width: 50%;
+  min-height: 14.06rem;
+}
+.box .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+  font-size: large;
+  font-weight:700 ;
+  margin: 10px 0;
+  margin-top: auto;
+  width:auto;
+  border-radius: 5px;
+ 
+}
+.addon .selected {
+  background-color: palegreen;
+}
+.addon button{
+  align-self: end;
+  width:max-content;
+}
+h2.addon.title {
+  font-size: 2em;
+  margin: 1rem 0;
+}
+@media (max-width: 768px) {
+  .quote .container {
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .boxes .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .quote .container >div {
+    width: 100%;
+  }
+  .box {
+    width: 100%;
+  }
+  .box .title {
+    flex-direction: column;
+  }
+  .addon button{
+    align-self: center;
+  }
+  .quote .box {
+    padding: 20px;
+  }
+}
